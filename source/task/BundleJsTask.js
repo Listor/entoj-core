@@ -206,7 +206,8 @@ class BundleJsTask extends BaseTask
                 'jspm_packages/*': 'entoj/jspm_packages/*',
                 'base/*': 'sites/base/*',
                 'github:*': 'entoj/jspm_packages/github/*',
-                'npm:*': 'entoj/jspm_packages/npm/*'
+                'npm:*': 'entoj/jspm_packages/npm/*',
+                'bower:*': 'entoj/jspm_packages/bower/*'
             };
             const sites = yield scope._sitesRepository.getItems();
             for (const site of sites)
