@@ -233,7 +233,7 @@ class BundleJsTask extends BaseTask
                         if (loadedFiles.indexOf(load.name) === -1)
                         {
                             const stats = fs.statSync(sourceFilename);
-                            const size = stats["size"] / 1024;
+                            const size = stats['size'] / 1024;
                             scope._cliLogger.end(work, false, 'Added ' + filename + ' <' + size.toFixed(1) + 'kb>');
                             loadedFiles.push(load.name);
                         }
